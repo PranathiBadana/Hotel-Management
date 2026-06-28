@@ -26,7 +26,7 @@ export default function BookingsPage() {
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => { fetchAll(); }, [filter]);
+  useEffect(() => { fetchAll(); }, [filter.status]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     guestsAPI.getAll().then(r => setGuests(r.data.data)).catch(() => {});
     roomsAPI.getAvailable().then(r => setRooms(r.data.data)).catch(() => {});

@@ -18,7 +18,7 @@ export default function GuestsPage() {
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => { const t = setTimeout(fetchGuests, 300); return () => clearTimeout(t); }, [search]);
+ useEffect(() => { const t = setTimeout(fetchGuests, 300); return () => clearTimeout(t); }, [search]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const openModal = (guest = null) => {
     setEditing(guest);

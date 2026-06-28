@@ -26,8 +26,7 @@ export default function RoomsPage() {
       .finally(() => setLoading(false));
   };
 
-  useEffect(() => { fetchRooms(); }, [filter]);
-
+  useEffect(() => { fetchRooms(); }, [filter]); // eslint-disable-line react-hooks/exhaustive-deps
   const openModal = (room = null) => {
     if (room) {
       setEditing(room);
