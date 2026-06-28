@@ -1,0 +1,6 @@
+node_modules
+.env
+hotel-backend/node_modules
+hotel-frontend/node_modules
+hotel-backend/.env
+hotel-frontend/.env
