@@ -31,7 +31,7 @@ export default function LoginPage() {
             <label className="form-label">Email Address</label>
             <input
               type="email" className="form-control"
-              placeholder="admin@grandpalace.com"
+              placeholder="admin2@grandpalace.com"
               value={form.email}
               onChange={e => setForm({ ...form, email: e.target.value })}
               required
@@ -52,7 +52,7 @@ export default function LoginPage() {
           </button>
         </form>
         <p style={{ textAlign: 'center', marginTop: '20px', fontSize: '0.75rem', color: 'var(--gray-400)' }}>
-          Default: admin@grandpalace.com / admin123
+          Default: admin2@hotel.com / admin123
         </p>
       </div>
     </div>
